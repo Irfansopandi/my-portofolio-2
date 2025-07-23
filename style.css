@@ -1,0 +1,53 @@
+body {
+  min-height: 3000px;
+}
+.jumbotron {
+  padding-top: 7rem;
+  background-color: #e2edff;
+}
+
+.project {
+  background-color: #e2edff;
+}
+.nav-link :hover {
+  color: #fff;
+}
+.card {
+  transition: 0.5s;
+  margin: 5px 0;
+}
+.card:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  padding-top: 5rem;
+}
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+    transition: 0.3s;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 0;
+    margin: auto;
+    margin-bottom: -8px;
+  }
+
+  .nav-link:hover {
+    color: white !important;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+}
