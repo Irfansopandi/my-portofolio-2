@@ -429,7 +429,7 @@
     <!-- akhir contact -->
 
     <!-- footer -->
-    <footer class="bg-primary text-white text-center pb-3">
+    <footer class="bg-primary text-white text-center pb-3 footer">
       <p>
         Create with <i class="bi bi-heart-fill text-danger"></i> by
         <a href="#" class="text-white fw-bold">Irfan Sopandi</a>
@@ -523,11 +523,13 @@
 
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll(".laptop-box"), {
-        max: 35,
-        speed: 1000,
-        glare: true,
-      });
+      if (window.innerWidth >= 992) {
+        VanillaTilt.init(document.querySelectorAll(".laptop-box"), {
+          max: 35,
+          speed: 1000,
+          glare: true,
+        });
+      }
     </script>
   </body>
 </html>
