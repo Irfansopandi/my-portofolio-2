@@ -13,16 +13,111 @@ body {
   color: #fff;
 }
 .card {
-  transition: 0.5s;
+  transition: transform 0.3s ease;
   margin: 5px 0;
-}
-.card:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 section {
   padding-top: 5rem;
 }
+
+.galery-img {
+  width: 100%;
+}
+
+#galery .row > * {
+  padding: 0;
+}
+
+/* my laptop */
+.laptop-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.laptop-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+.laptop-box:hover::before {
+  opacity: 0.2;
+}
+.laptop-box::after {
+  content: "LAPTOP";
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.laptop-box:hover::after {
+  opacity: 0.2;
+}
+
+.laptop-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.laptop-box:hover .laptop-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.laptop-detail-buttom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.laptop-box:hover .laptop-detail-buttom {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.laptop-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 450px;
+  transition: 0.3s;
+}
+
+.laptop-box:hover .laptop-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(3deg) scale(1.2);
+}
+
 @media (min-width: 992px) {
   .nav-link {
     text-transform: uppercase;
@@ -45,9 +140,5 @@ section {
 
   .nav-link:hover::after {
     width: 100%;
-  }
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   }
 }

@@ -12,6 +12,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my icons -->
     <link
       rel="stylesheet"
@@ -52,6 +54,9 @@
               <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#galery">Gallery</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -69,7 +74,7 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="display-4">IRFAN SOPANDI</h1>
-      <p class="lead">Front-End Developer | Web Designer</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -82,21 +87,23 @@
 
     <!-- about -->
     <section class="about" id="about">
-      <div class="container">
+      <div class="container" data-aos-offset="300">
         <div class="row mb-3">
           <div class="col">
-            <h2 class="text-center">About Me</h2>
+            <h2 class="text-center" data-aos="zoom-in" data-aos-delay="70">
+              About Me
+            </h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="50">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               delectus saepe suscipit debitis architecto est et quis, iusto hic
               dolore?
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               ipsa magnam vitae sunt quidem eos hic nostrum accusantium ratione
@@ -117,15 +124,15 @@
 
     <!-- project -->
     <section class="project" id="project">
-      <div class="container">
+      <div class="container" data-aos-offset="300">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="zoom-in" data-aos-delay="70">
             <h2>My Project</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000">
               <img src="img/p1.png" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">
@@ -136,18 +143,30 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/p2.png" class="card-img-top" alt="project2" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <div class="card-inner">
+                <img src="img/p2.png" class="card-img-top" alt="project2" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <img src="img/p3.png" class="card-img-top" alt="project3  " />
               <div class="card-body">
                 <p class="card-text">
@@ -158,7 +177,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               <img src="img/p4.png" class="card-img-top" alt="project4  " />
               <div class="card-body">
                 <p class="card-text">
@@ -169,7 +193,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
               <img src="img/p5.png" class="card-img-top" alt="project5  " />
               <div class="card-body">
                 <p class="card-text">
@@ -181,6 +210,47 @@
           </div>
         </div>
       </div>
+
+      <!-- laptop -->
+      <section class="laptop" id="laptop">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Laptop</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="laptop-box">
+                <h4 class="laptop-name">Lenovo</h4>
+                <img src="img/thumbs/lp1.png" alt="Lenovo" class="laptop-img" />
+                <a href="" class="btn btn-light laptop-detail-buttom"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="laptop-box">
+                <h4 class="laptop-name">HP</h4>
+                <img src="img/thumbs/lp2.png" alt="HP" class="laptop-img" />
+                <a href="" class="btn btn-light laptop-detail-buttom"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="laptop-box">
+                <h4 class="laptop-name">ASUS</h4>
+                <img src="img/thumbs/lp4.png" alt="ASUS" class="laptop-img" />
+                <a href="" class="btn btn-light laptop-detail-buttom"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir laptop -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -190,6 +260,92 @@
       </svg>
     </section>
     <!-- akhir project -->
+
+    <!-- Galery -->
+    <section class="galery" id="galery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Galery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/1.png"
+                alt="galery1"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/2.png"
+                alt="galery2"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/3.png"
+                alt="galery3"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/4.png"
+                alt="galery4"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/5.png"
+                alt="galery5"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/6.png"
+                alt="galery6"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/2.png"
+                alt="galery7"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbs/1.png"
+                alt="galery8"
+                class="img-fluid galery-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skhir Galery -->
 
     <!-- contact -->
     <section class="contact" id="contact">
@@ -289,6 +445,52 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galeryImg = document.querySelectorAll(".galery-img");
+
+      galeryImg.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", {
+        duration: 2,
+        delay: 1.5,
+        text: "Front-End Developer | Web Designer",
+      });
+      gsap.from(".jumbotron img", {
+        duration: 1,
+        rotateY: 360,
+        opacity: 0,
+      });
+      gsap.from(".navbar", {
+        duration: 1.5,
+        y: "-100%",
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".display-4", {
+        duration: 1,
+        x: -50,
+        opacity: 0,
+        delay: 0.5,
+        ease: "back",
+      });
+      gsap.from(".");
+    </script>
+
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycby5iYpeC-1w-jlbYIH1xQh0gWyfqgb1sJ5WjSArTUhYFxXcDcRkkiewdyJKFg6f_uyLjg/exec";
@@ -316,6 +518,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".laptop-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
       });
     </script>
   </body>
